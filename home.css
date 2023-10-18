@@ -1,0 +1,223 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+}
+
+.hall{
+  position: fixed;
+  width: 100%;
+  top: 0;
+
+}
+.bell{
+  background-color: #fff;
+  height: 25px;
+  text-align: center;
+  /* position: fixed; */
+}
+
+.bell marquee{
+  margin-top: 5px;
+  font-size: 15px; 
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.head{
+  display: flex;
+  justify-content: space-between;
+  background-color: antiquewhite;
+  width: 100%;
+  /* position: fixed; */
+}
+
+.head h2{
+  margin-top: 20px;
+  margin-left: 40px;
+  /* width: 350px; */
+}
+
+ul{
+  float: right;
+  list-style-type: none;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 550px;
+  /* width: 650px; */
+}
+
+li{
+  float: left;
+  /* font-size: 20px; */
+  display: flex;
+}
+
+.head a{
+  display: flex;
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  margin: 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+li a:hover{
+  text-decoration: underline;
+}
+
+
+.head i{
+  /* margin-top: 20px; */
+  margin-right: 50px;
+}
+
+/* icon start*/
+.cart-icon {
+  position: relative;
+  display: inline-block;
+}
+
+.cart-indicator {
+  position: absolute;
+  top: 2px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 6px 8px;
+  font-size: 12px;
+  /* display: none; */
+  margin-right: 60px;
+}
+
+.cart-icon:hover .cart-indicator {
+  display: block;
+  animation: pulse 1s infinite alternate; /* Example pulse animation */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+/* icon end */
+.resu{
+  background-image: url('d0ea54e5cf2cdfdb3e450a1e311c05ef.jpg'); /* Replace with your restaurant image */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.hero {
+
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+  margin-top: 100px;
+}
+
+.hero-text h2 {
+  color: #fff;
+  font-size: 36px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff5722;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.about,
+.menu,
+.contact {
+  color: #fff;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.about h2,
+.menu h2,
+.contact h2 {
+  color: orange;
+  font-size: 30px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+
+/* icons */
+.sec{
+  background: #fff;
+  height: 50px;
+}
+
+.sec01{
+  margin-right: 700px;
+}
+.fa {
+  padding: 10px;
+  /* font-size: 30px; */
+  width: 15px;
+  text-align: center;
+  float: right;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+background: #3B5998;
+color: white;
+}
+
+.fa-twitter {
+background: #55ACEE;
+color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+/* icons */
+
+
+
+/* To make it responsive */
+
+@media screen and (max-width: 600px){
+   ul{
+    list-style-type: none;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-left: 550px; */
+    /* width: 650px; */
+  }
+}

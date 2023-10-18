@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login and Signup Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+        }
+        .form-container {
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f8f8f8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container" id="login-container">
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="login-username">Username:</label>
+                <input type="text" id="login-username" name="login-username" required><br><br>
+
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" name="login-password" required><br><br>
+
+                <input type="submit" value="Login">
+            </form>
+            <p id="login-status"></p>
+        </div>
+        <div class="form-container" id="signup-container">
+            <h2>Signup</h2>
+            <form id="signup-form">
+                <label for="signup-username">Username:</label>
+                <input type="text" id="signup-username" name="signup-username" required><br><br>
+
+                <label for="signup-password">Password:</label>
+                <input type="password" id="signup-password" name="signup-password" required><br><br>
+
+                <input type="submit" value="Signup">
+            </form>
+            <p id="signup-status"></p>
+        </div>
+    </div>
+
+    <script>
+        // Login Form
+        const loginForm = document.getElementById("login-form");
+        const loginStatus = document.getElementById("login-status");
+
+        // Signup Form
+        const signupForm = document.getElementById("signup-form");
+        const signupStatus = document.getElementById("signup-status");
+
+        // Handle login
+
+
+        // Handle signup
+        signupForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            const username = signupForm.elements["signup-username"].value;
+            const password = signupForm.elements["signup-password"].value;
+
+            // Store user details in local storage
+            localStorage.setItem(username, password);
+            signupStatus.innerText = `Account created for ${username}`;
+        });
+    </script>
+</body>
+</html>

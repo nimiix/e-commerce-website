@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Your Cart</title>
+  <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+  <div class="hall">
+    <div class="bell">
+      <marquee behavior="" direction="">WE ARE DELIGTED IN BRINGING TO YOU NIGERIAN'S BEST MOUTH WATERING FOOD AT VERY LOW PRICE, WE DELIVEER TO YOUR DOOR STEP FOR YOU TO HAVE A PERFECT MEAL.......</marquee>
+    </div>
+
+    <div class="head" style="height: 90px;">
+      <h2>THE <SPAN style="color: orangered;">B</SPAN>EST SPOT</h2>
+      <input type="search" placeholder="Type to Search">
+      <button type="Search">Search</button>
+        <ul>
+          <li>
+            <a href="home.html">HOME</a>
+            <a href="menu.html">MENU</a>
+            <a href="aboutus.html">ABOUT US</a>
+            <a href="sign-up.html">SIGN UP</a>
+            <a href="sign-in.html">SIGN IN</a>
+          </li>
+        </ul>
+        <div class="cart-icon">
+          <a href="cart.html" >
+            <i class="fa fa-shopping-cart" id="toast" style="font-size:30px"></i>
+            <span class="cart-indicator" id="cart-indicator">0</span>
+          </a>
+  
+        </div>
+      </div>
+
+      <hr>
+    <div class="container">
+        <h3>Items add to cart</h3>
+      <hr>
+    </div>
+    <table>
+      <thead>
+          <tr>
+              <th>Product</th>
+              <th>Name</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Total</th>
+              <th>Remove</th>
+          </tr>
+      </thead>
+      <tbody class="tby" id="cart-body">
+          <!-- Example Cart Items -->
+          <!-- <tr>
+              <td><img class="product-image" src="foods/0f3582170e73f1332fa0ea75bd133b30.jpg"></td>
+              <td>Jollof Rice</td>
+              <td class="item-price"><h3>&#8358;3000</h3></td>
+              <td><input type="number" class="num" value="1"></td>
+              <td class="total-price"><h3>&#8358;39.98</h3></td>
+              <td><button class="remove-button">Remove</button></td>
+          </tr> -->
+          <!-- <tr>
+              <td><img class="product-image" src="product2.jpg" alt="Product Image"></td>
+              <td>Product 2</td>
+              <td>$24.99</td>
+              <td>1</td>
+              <td>$24.99</td>
+              <td><span class="remove-button">Remove</span></td>
+          </tr> -->
+          <!-- Add more rows for additional items in the cart -->
+      </tbody>
+      <tr>
+        <td><img class="product-image"></td>
+        <td></td>
+        <td><strong>Grand Total</strong></td>
+        <td></td>
+        <td class="grand-total"><h3>&#8358;0</h3></td>
+    </tr>
+  
+  </table>
+  </div>
+  <script src="script.js"></script>
+  
+</body>
+</html>
